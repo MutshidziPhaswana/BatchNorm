@@ -12,3 +12,5 @@ Batch Normalization (Batch Norm) is a normalization technique applied between th
 **Regularization Effect:** Batch Norm can have a regularization effect due to the noise introduced when computing over mini-batches. This noise helps combat overfitting, though it is usually small and often used in conjunction with Dropout for better regularization.
 
 Overall, Batch Norm is crucial for faster and more reliable training of deep neural networks by managing internal covariate shifts and providing a regularization effect.
+
+References: https://www.baeldung.com/cs/batch-normalization-cnn#batch-normalization
