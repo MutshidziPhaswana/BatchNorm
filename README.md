@@ -2,7 +2,7 @@
 
 Batch Normalization (Batch Norm) is a normalization technique applied between the layers of a Neural Network, rather than on the raw data. It operates on mini-batches instead of the full data set. This technique speeds up training and allows for higher learning rates, simplifying the learning process.
 
-**Key Points**
+#### Key Points
 **Internal Covariate Shift:** Batch Norm reduces internal covariate shift, which refers to changes in the input distribution of an internal layer of a Neural Network due to continuous adjustments in weights and multiple computations throughout the training process.
 
 **Example:** In a car rental service model, if we only have data on cars and suddenly include motorbikes, the model might fail to predict motorbike prices accurately. This change in data is termed covariate shift.
