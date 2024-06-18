@@ -1,7 +1,13 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Batch Normalization
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+Batch Normalization (Batch Norm) is a normalization technique applied between the layers of a Neural Network, rather than on the raw data. It operates on mini-batches instead of the full data set. This technique speeds up training and allows for higher learning rates, simplifying the learning process.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+**Key Points**
+**Internal Covariate Shift:** Batch Norm reduces internal covariate shift, which refers to changes in the input distribution of an internal layer of a Neural Network due to continuous adjustments in weights and multiple computations throughout the training process.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+**Example:** In a car rental service model, if we only have data on cars and suddenly include motorbikes, the model might fail to predict motorbike prices accurately. This change in data is termed covariate shift.
+**Stabilizing Inputs:** By applying Batch Norm, the mean (𝛽) and standard deviation (𝛾) of the layer inputs are kept consistent. This stability reduces the variability in input distributions, providing a more stable foundation for deeper layers during learning.
+
+**Regularization Effect:** Batch Norm can have a regularization effect due to the noise introduced when computing over mini-batches. This noise helps combat overfitting, though it is usually small and often used in conjunction with Dropout for better regularization.
+
+Overall, Batch Norm is crucial for faster and more reliable training of deep neural networks by managing internal covariate shifts and providing a regularization effect.
